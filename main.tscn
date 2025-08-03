@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=4 uid="uid://bglm6lgc7dpna"]
+[gd_scene load_steps=7 format=4 uid="uid://bglm6lgc7dpna"]
 
+[ext_resource type="Script" uid="uid://dacivivd884lb" path="res://player.gd" id="1_h2yge"]
 [ext_resource type="Texture2D" uid="uid://cbq17q42u72eh" path="res://walk_0.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://t57mu5rl0201" path="res://Screenshot 2025-08-03 at 5.04.22 PM.png" id="2_0xm2m"]
 
@@ -304,6 +305,7 @@ sources/0 = SubResource("TileSetAtlasSource_h2yge")
 [node name="Main" type="Node"]
 
 [node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("1_h2yge")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(69, 366)
